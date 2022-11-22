@@ -1,0 +1,14 @@
+name: powershell commands
+
+on: [push]
+
+jobs:
+  run-command:
+    runs-on: windows
+    steps: 
+      - name: echo a string
+        run: echo "Hello World"
+      - name: multile script
+        run: |
+          node -v
+          npm -v
